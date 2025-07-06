@@ -1,0 +1,33 @@
+body {
+	font-size: 100%;
+	line-height: 1.5;
+}
+
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 600px;
+	}
+}
+
+table {
+	border-spacing: 0;
+}
+td {
+	border-bottom: 1px solid;
+	padding: 0 4px;
+}
+td:first-child {
+	border-left: 1px solid;
+}
+
+.btnX{
+	padding: 0 8px;
+	margin: 3px 0;
+	background-color: darkgray;
+	border-radius: 50%
+}
+
+form{
+	margin: 10px 0 5px 0;
+}
