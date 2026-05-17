@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>nicodel — 設定</title>
+    <link rel="stylesheet" href="option.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 class="title">nicodel</h1>
+        <p class="subtitle">非表示にする投稿者の設定</p>
+      </header>
+
+      <section class="card">
+        <h2 class="section-title">ブロックリスト</h2>
+
+        <p id="emptyState" class="empty-state" hidden>
+          登録されているユーザーはいません
+        </p>
+
+        <table
+          id="upList"
+          class="block-table"
+          aria-label="ブロックリスト"
+        ></table>
+
+        <form id="newName" class="add-form">
+          <label for="name" class="sr-only">ユーザー名</label>
+          <input
+            type="text"
+            id="name"
+            class="input"
+            placeholder="ユーザー名を入力"
+            autocomplete="off"
+            spellcheck="false"
+          />
+          <button type="submit" class="btn btn-primary">追加</button>
+        </form>
+      </section>
+
+      <footer class="footer">
+        <button type="button" id="reset" class="btn btn-danger">
+          すべてリセット
+        </button>
+      </footer>
+    </div>
+
+    <script src="option.js"></script>
+  </body>
+</html>
